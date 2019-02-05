@@ -24,9 +24,9 @@ public class Main {
         FreeMarkerEngine freeMarkerEngine = new FreeMarkerEngine(configuration);
 
 
-        get("/formulario/", (request, response) -> {
+        get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("titulo", "Formulario en FreeMarker");
+            attributes.put("titulo", "Formulario tarea 2");
             return new ModelAndView(attributes, "formulario.ftl");
         }, freeMarkerEngine);
 
