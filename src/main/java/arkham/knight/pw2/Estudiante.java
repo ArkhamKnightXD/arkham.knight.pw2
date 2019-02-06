@@ -1,6 +1,8 @@
 package arkham.knight.pw2;
 
-public final class Estudiante {
+import java.io.Serializable;
+
+public class Estudiante implements Serializable {
 
     private static int id =1;
     private static String nombre;
