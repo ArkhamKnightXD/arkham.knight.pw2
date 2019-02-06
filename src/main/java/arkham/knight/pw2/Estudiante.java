@@ -2,7 +2,7 @@ package arkham.knight.pw2;
 
 public final class Estudiante {
 
-    private static int id;
+    private static int id =1;
     private static String nombre;
     private static String apellido;
     private static int matricula;
@@ -13,8 +13,8 @@ public final class Estudiante {
         return id;
     }
 
-    public static void setId(int id) {
-        Estudiante.id = id;
+   public static void setId(int id) {
+        Estudiante.id = ++id;
     }
 
     public static String getNombre() {

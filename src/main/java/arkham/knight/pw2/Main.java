@@ -9,6 +9,7 @@ import static spark.Spark.*;
 import java.util.HashMap;
 import java.util.Map;
 
+
 import static spark.Spark.*;
 
 public class Main {
@@ -29,6 +30,42 @@ public class Main {
             attributes.put("titulo", "Formulario tarea 2");
             return new ModelAndView(attributes, "formulario.ftl");
         }, freeMarkerEngine);
+
+        /**
+         * http://localhost:4567/datosEstudiante/20011136
+         */
+        get("/datosEstudiante/:matricula", (request, response) -> {
+            //obteniendo la matricula.
+            Estudiante estudiante= new Estudiante(Integer.parseInt(request.params("id")), "nombre","apellido",Integer.parseInt(request.params("id")),"telefono");//FakeServices.getInstancia().getEstudianteMatricula(Integer.parseInt(request.params("matricula")));
+
+            Map<String, Object> attributes = new HashMap<>();
+            attributes.put("estudiante", estudiante);
+
+            //enviando los parametros a la vista.
+            return new ModelAndView(attributes, "datosEstudiante.ftl");
+        }, freeMarkerEngine); //
+
+        post("/procesarFormulario/", (request, response) -> {
+            //obteniendo la matricula.
+
+            String variableOculta = request.queryParams("variable_oculta");
+            int id = Integer.parseInt(request.queryParams("id"));
+            int matricula = Integer.parseInt(request.queryParams("matricula"));
+            String nombre =request.queryParams("nombre");
+            String apellido =request.queryParams("apellido");
+            String telefono =request.queryParams("telefono");
+            System.out.println("La variable Oculta: "+variableOculta);
+
+            Estudiante estudiante= new Estudiante(id, nombre, apellido, matricula, telefono);
+
+            Map<String, Object> attributes = new HashMap<>();
+            attributes.put("titulo", "Procesando Estudiante");
+            attributes.put("estudiante", estudiante);
+
+            //enviando los parametros a la vista.
+            return new ModelAndView(attributes, "formularioProcesado.ftl");
+        }, freeMarkerEngine); //
+
 
 
 

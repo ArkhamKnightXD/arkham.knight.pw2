@@ -11,8 +11,6 @@
 
     <link href="/css/formularioEstudiante.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,7 +22,7 @@
 </head>
 <body>
 
-    <h1>Registo de estudiante</h1>
+    <h1>Registro de estudiante</h1>
     <form action="/procesarFormulario/" method="post">
 
         <div class="form-group">
