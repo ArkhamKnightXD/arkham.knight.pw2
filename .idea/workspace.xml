@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="24eb79af-8da5-4d4c-898f-cc947df75723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
@@ -18,6 +19,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Templates.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/formulario.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/formulario.ftl" afterDir="false" />
     </list>
+=======
+    <list default="true" id="c5e96c6c-9983-45f8-9b73-31849a3b1704" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -80,8 +84,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/formulario.ftl">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="69">
               <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+=======
+            <state relative-caret-position="629">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -284,12 +296,16 @@
       <workItem from="1549331694840" duration="50000" />
       <workItem from="1549332532147" duration="2594000" />
       <workItem from="1549335769257" duration="261000" />
-      <workItem from="1549386260503" duration="613000" />
+      <workItem from="1549386260503" duration="1212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="7876000" />
+=======
+    <option name="totallyTimeSpent" value="4771000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -303,7 +319,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Run" order="2" weight="0.32820514" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32887402" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,8 +421,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="125">
           <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+=======
+        <state relative-caret-position="629">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
