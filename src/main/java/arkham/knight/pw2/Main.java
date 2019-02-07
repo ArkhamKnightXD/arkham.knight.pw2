@@ -24,6 +24,8 @@ public class Main {
         //staticFiles.location("/META-INF/resources"); //para utilizar los WebJars.
         staticFiles.location("/publico");
 
+
+
         Configuration configuration=new Configuration(Configuration.VERSION_2_3_23);
         configuration.setClassForTemplateLoading(Main.class, "/templates");
 
@@ -33,7 +35,7 @@ public class Main {
         get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("titulo", "Formulario tarea 2");
-            return new ModelAndView(attributes, "formulario.ftl");
+            return new ModelAndView(attributes, "index.ftl");
         }, freeMarkerEngine);
 
         /**
