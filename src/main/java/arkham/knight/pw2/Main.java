@@ -15,6 +15,11 @@ import static spark.Spark.*;
 public class Main {
     public static void main(String[] args) {
 
+        EstudianteServicio estudianteServicio = new EstudianteServicio();
+        estudianteServicio.insertar(new Estudiante("Karvin","Jimenez",20141336,"8095445787"));
+        estudianteServicio.insertar(new Estudiante("Pedrito","Espinal", 2014615,"2454154544"));
+
+
         //indicando los recursos publicos.
         //staticFiles.location("/META-INF/resources"); //para utilizar los WebJars.
         staticFiles.location("/publico");
