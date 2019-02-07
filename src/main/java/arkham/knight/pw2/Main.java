@@ -36,7 +36,7 @@ public class Main {
          */
         get("/datosEstudiante/:matricula", (request, response) -> {
             //obteniendo la matricula.
-            Estudiante estudiante= new Estudiante(Integer.parseInt(request.params("id")), "nombre","apellido",Integer.parseInt(request.params("id")),"telefono");//FakeServices.getInstancia().getEstudianteMatricula(Integer.parseInt(request.params("matricula")));
+            Estudiante estudiante= new Estudiante( "nombre","apellido",Integer.parseInt(request.params("id")),"telefono");
 
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("estudiante", estudiante);
@@ -49,14 +49,13 @@ public class Main {
             //obteniendo la matricula.
 
             String variableOculta = request.queryParams("variable_oculta");
-            int id = Integer.parseInt(request.queryParams("id"));
             int matricula = Integer.parseInt(request.queryParams("matricula"));
             String nombre =request.queryParams("nombre");
             String apellido =request.queryParams("apellido");
             String telefono =request.queryParams("telefono");
             System.out.println("La variable Oculta: "+variableOculta);
 
-            Estudiante estudiante= new Estudiante(id, nombre, apellido, matricula, telefono);
+            Estudiante estudiante= new Estudiante(nombre, apellido, matricula, telefono);
 
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("titulo", "Procesando Estudiante");

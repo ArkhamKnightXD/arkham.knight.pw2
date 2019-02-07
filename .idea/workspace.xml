@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
 <<<<<<< Updated upstream
     <list default="true" id="24eb79af-8da5-4d4c-898f-cc947df75723" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/arkham/knight/pw2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/arkham/knight/pw2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/arkham/knight/pw2/Templates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Templates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/formulario.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/formulario.ftl" afterDir="false" />
     </list>
 =======
     <list default="true" id="c5e96c6c-9983-45f8-9b73-31849a3b1704" name="Default Changelist" comment="" />
@@ -72,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="483">
               <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -85,6 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/formulario.ftl">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <state relative-caret-position="69">
               <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
 =======
@@ -94,6 +81,10 @@
                 <element signature="imports" expanded="true" />
               </folding>
 >>>>>>> Stashed changes
+=======
+            <state relative-caret-position="276">
+              <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -102,7 +93,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Estudiante.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" />
               <folding>
                 <element signature="e#260#261#0" expanded="true" />
                 <element signature="e#285#286#0" expanded="true" />
@@ -132,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="460">
               <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
             </state>
           </provider>
@@ -171,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,6 +222,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +276,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c5e96c6c-9983-45f8-9b73-31849a3b1704" name="Default Changelist" comment="" />
+      <changelist id="24eb79af-8da5-4d4c-898f-cc947df75723" name="Default Changelist" comment="" />
       <created>1549171653691</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -296,21 +286,31 @@
       <workItem from="1549331694840" duration="50000" />
       <workItem from="1549332532147" duration="2594000" />
       <workItem from="1549335769257" duration="261000" />
+<<<<<<< Updated upstream
       <workItem from="1549386260503" duration="1212000" />
+=======
+      <workItem from="1549386260503" duration="613000" />
+      <workItem from="1549512727985" duration="274000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="7876000" />
 =======
     <option name="totallyTimeSpent" value="4771000" />
 >>>>>>> Stashed changes
+=======
+    <option name="totallyTimeSpent" value="8150000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22087745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22390318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -409,20 +409,32 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/otraPagina.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Templates.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Templates.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/thymeleaf/funcionalidad.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/publico/dashboardBootStrap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="69">
+          <caret line="21" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/publico/ejemploBootStrap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <state relative-caret-position="125">
+=======
+        <state relative-caret-position="483">
+>>>>>>> Stashed changes
           <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
 =======
         <state relative-caret-position="629">
@@ -434,20 +446,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/thymeleaf/funcionalidad.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/publico/dashboardBootStrap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="21" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/arkham/knight/pw2/Estudiante.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
           <folding>
             <element signature="e#260#261#0" expanded="true" />
             <element signature="e#285#286#0" expanded="true" />
@@ -475,22 +476,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="460">
           <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/publico/ejemploBootStrap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/formulario.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="276">
+          <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
         </state>
       </provider>
     </entry>
