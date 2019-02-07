@@ -50,12 +50,13 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<div class="header-btns">
-					<a href="#" class="site-btn sb-c3">Ir al crud</a>
+					<a href="/crud" class="site-btn sb-c3">Ir al CRUD</a>
 				</div>
 			</div>
 		</div>
 	</header>
 	<!-- Header section end -->
+
 
 
 	<!-- Hero section -->

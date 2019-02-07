@@ -18,6 +18,7 @@ public class Main {
         EstudianteServicio estudianteServicio = new EstudianteServicio();
         estudianteServicio.insertar(new Estudiante("Karvin","Jimenez",20141336,"8095445787"));
         estudianteServicio.insertar(new Estudiante("Pedrito","Espinal", 2014615,"2454154544"));
+        estudianteServicio.insertar(new Estudiante("Carol","Grimes", 2014445,"244427474"));
 
 
         //indicando los recursos publicos.
@@ -34,44 +35,19 @@ public class Main {
 
         get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("titulo", "Formulario tarea 2");
+
             return new ModelAndView(attributes, "index.ftl");
         }, freeMarkerEngine);
 
-        /**
-         * http://localhost:4567/datosEstudiante/20011136
-         */
-        get("/datosEstudiante/:matricula", (request, response) -> {
-            //obteniendo la matricula.
-            Estudiante estudiante= new Estudiante( "nombre","apellido",Integer.parseInt(request.params("id")),"telefono");
-
+        get("/crud", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("estudiante", estudiante);
-
-            //enviando los parametros a la vista.
-            return new ModelAndView(attributes, "datosEstudiante.ftl");
-        }, freeMarkerEngine); //
-
-        post("/procesarFormulario/", (request, response) -> {
-            //obteniendo la matricula.
-
-            String variableOculta = request.queryParams("variable_oculta");
-            int matricula = Integer.parseInt(request.queryParams("matricula"));
-            String nombre =request.queryParams("nombre");
-            String apellido =request.queryParams("apellido");
-            String telefono =request.queryParams("telefono");
-            System.out.println("La variable Oculta: "+variableOculta);
-
-            Estudiante estudiante= new Estudiante(nombre, apellido, matricula, telefono);
-
-            Map<String, Object> attributes = new HashMap<>();
-            attributes.put("titulo", "Procesando Estudiante");
-            attributes.put("estudiante", estudiante);
-
-            //enviando los parametros a la vista.
-            return new ModelAndView(attributes, "formularioProcesado.ftl");
-        }, freeMarkerEngine); //
-
+            attributes.put("titulo", "CRUD sencillo de estudiantes registrados.");
+            attributes.put("header", "Estudiantes registrados");
+            attributes.put("agregarEstudiante", "Agregar nuevo estudiante");
+            attributes.put("listaEstudiante", estudianteServicio.encontrarEstudiantes());
+            attributes.put("size", estudianteServicio.encontrarEstudiantes().size());
+            return new ModelAndView(attributes, "crud.ftl");
+        }, freeMarkerEngine);
 
 
 
