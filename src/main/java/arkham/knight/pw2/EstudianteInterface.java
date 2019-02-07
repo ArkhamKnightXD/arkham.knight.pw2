@@ -11,7 +11,7 @@ public interface EstudianteInterface {
 
     void borrar(Estudiante estudiante);
 
-    List<Estudiante>encontrarTodos();
+    List<Estudiante>encontrarEstudiantes();
 
     Estudiante encontrarPorMatricula(int matricula);
 

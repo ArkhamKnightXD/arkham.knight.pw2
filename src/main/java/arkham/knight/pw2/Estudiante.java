@@ -11,35 +11,35 @@ public class Estudiante implements Serializable {
 
 
 
-    public static String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
-    public static void setNombre(String nombre) {
+    public void setNombre(String nombre) {
         Estudiante.nombre = nombre;
     }
 
-    public static String getApellido() {
+    public String getApellido() {
         return apellido;
     }
 
-    public static void setApellido(String apellido) {
+    public void setApellido(String apellido) {
         Estudiante.apellido = apellido;
     }
 
-    public static int getMatricula() {
+    public int getMatricula() {
         return matricula;
     }
 
-    public static void setMatricula(int matricula) {
+    public void setMatricula(int matricula) {
         Estudiante.matricula = matricula;
     }
 
-    public static String getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public static void setTelefono(String telefono) {
+    public void setTelefono(String telefono) {
         Estudiante.telefono = telefono;
     }
 
