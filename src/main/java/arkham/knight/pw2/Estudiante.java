@@ -4,28 +4,19 @@ import java.io.Serializable;
 import org.json.simple.JSONObject;
 
 public class Estudiante implements Serializable {
+    private int matricula;
+    private String nombre;
+    private String apellido;
+    private String telefono;
 
-    private static String nombre;
-    private static String apellido;
-    private static int matricula;
-    private static String telefono;
-
-
-
-    public String getNombre() {
-        return nombre;
+    public Estudiante() {
     }
 
-    public void setNombre(String nombre) {
-        Estudiante.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        Estudiante.apellido = apellido;
+    public Estudiante(int matricula, String nombre, String apellido, String telefono) {
+        this.matricula = matricula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
     }
 
     public int getMatricula() {
@@ -33,7 +24,23 @@ public class Estudiante implements Serializable {
     }
 
     public void setMatricula(int matricula) {
-        Estudiante.matricula = matricula;
+        this.matricula = matricula;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getTelefono() {
@@ -41,17 +48,6 @@ public class Estudiante implements Serializable {
     }
 
     public void setTelefono(String telefono) {
-        Estudiante.telefono = telefono;
-    }
-
-
-    public Estudiante() {
-    }
-
-    public Estudiante(String nombre, String apellido, int matricula, String telefono) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.matricula = matricula;
         this.telefono = telefono;
     }
 
@@ -69,6 +65,4 @@ public class Estudiante implements Serializable {
 
         return jsonObject.toJSONString();
     }
-
-
 }
