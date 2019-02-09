@@ -28,7 +28,7 @@ public class Main {
 
         // redireccion  para el inicio de pagina
         get("/", (request, response) -> {
-            response.redirect("/index");
+            response.redirect("/inicio");
             return null;
         });
 
@@ -40,11 +40,8 @@ public class Main {
         //Inicio que muestra todos los estudiantes registrados. Si hay
         get("/inicio", (request, response) -> {
             Map<String, Object> parametros = new HashMap<>();
-            parametros.put("titulo", "CRUD sencillo de estudiantes registrados.");
-            parametros.put("header", "Listado de estudiantes registrados.");
-            parametros.put("agregarEstudiante", "Agregar nuevo estudiante");
+            parametros.put("titulo", "Practica 2 programacion web.");
             parametros.put("listaEstudiantes", estudianteService.encontrarEstudiantes());
-            parametros.put("size", estudianteService.encontrarEstudiantes().size());
 
             return renderThymeleaf(parametros, "/inicio");
         });
@@ -52,7 +49,7 @@ public class Main {
         get("/insertar", (request, response) -> {
             Map<String, Object> parametros = new HashMap<>();
             parametros.put("metodo", "insertar");
-            parametros.put("titulo", "Agregar estudiante.");
+            parametros.put("titulo", "Agregando estudiante.");
             parametros.put("header", "Agregar nuevo estudiante.");
             parametros.put("submit", "Insertar");
 
