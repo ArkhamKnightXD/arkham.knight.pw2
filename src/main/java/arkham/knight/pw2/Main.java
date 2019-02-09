@@ -28,8 +28,13 @@ public class Main {
 
         // redireccion  para el inicio de pagina
         get("/", (request, response) -> {
-            response.redirect("/inicio");
+            response.redirect("/index");
             return null;
+        });
+
+        get("/index", (request, response) -> {
+            Map<String, Object> parametros = new HashMap<>();
+            return renderThymeleaf(parametros, "/index");
         });
 
         //Inicio que muestra todos los estudiantes registrados. Si hay
