@@ -33,44 +33,44 @@ public class Main {
         });
 
         get("/index", (request, response) -> {
-            Map<String, Object> parametros = new HashMap<>();
-            return renderThymeleaf(parametros, "/index");
+            Map<String, Object> attributes = new HashMap<>();
+            return renderThymeleaf(attributes, "/index");
         });
 
         //Inicio que muestra todos los estudiantes registrados. Si hay
         get("/inicio", (request, response) -> {
-            Map<String, Object> parametros = new HashMap<>();
-            parametros.put("titulo", "Practica 2 programacion web.");
-            parametros.put("listaEstudiantes", estudianteService.encontrarEstudiantes());
+            Map<String, Object> attributes = new HashMap<>();
+            attributes.put("titulo", "Practica 2 programacion web.");
+            attributes.put("listaEstudiantes", estudianteService.encontrarEstudiantes());
 
-            return renderThymeleaf(parametros, "/inicio");
+            return renderThymeleaf(attributes, "/inicio");
         });
 
         get("/insertar", (request, response) -> {
-            Map<String, Object> parametros = new HashMap<>();
-            parametros.put("metodo", "insertar");
-            parametros.put("titulo", "Agregando estudiante.");
-            parametros.put("header", "Agregar nuevo estudiante.");
-            parametros.put("submit", "Insertar");
+            Map<String, Object> attributes = new HashMap<>();
+            attributes.put("metodo", "insertar");
+            attributes.put("titulo", "Agregando estudiante.");
+            attributes.put("header", "Agregar nuevo estudiante.");
+            attributes.put("submit", "Insertar");
 
-            return renderThymeleaf(parametros, "/form");
+            return renderThymeleaf(attributes, "/form");
         });
 
         get("/editar", (request, response) -> {
             int matricula = Integer.parseInt(request.queryParams("matricula"));
             Estudiante estudiante = estudianteService.encontrarPorMatricula(matricula);
 
-            Map<String, Object> parametros = new HashMap<>();
-            parametros.put("metodo", "editar");
-            parametros.put("titulo", "Editar estudiante.");
-            parametros.put("header", "Editar estudiante registrado.");
-            parametros.put("submit", "Actualizar");
-            parametros.put("mat", estudiante.getMatricula());
-            parametros.put("nom", estudiante.getNombre());
-            parametros.put("ape", estudiante.getApellido());
-            parametros.put("tel", estudiante.getTelefono());
+            Map<String, Object> attributes = new HashMap<>();
+            attributes.put("metodo", "editar");
+            attributes.put("titulo", "Editar estudiante.");
+            attributes.put("header", "Editar estudiante registrado.");
+            attributes.put("submit", "Actualizar");
+            attributes.put("matricula", estudiante.getMatricula());
+            attributes.put("nombre", estudiante.getNombre());
+            attributes.put("apellido", estudiante.getApellido());
+            attributes.put("telefono", estudiante.getTelefono());
 
-            return renderThymeleaf(parametros, "/form");
+            return renderThymeleaf(attributes, "/form");
         });
 
         post("/editar", (request, response) -> {
@@ -101,16 +101,6 @@ public class Main {
             return null;
         }));
 
-        get("/ver", (request, response) -> {
-            int matricula = Integer.parseInt(request.queryParams("matricula"));
-            Estudiante estudiante = estudianteService.encontrarPorMatricula(matricula);
-
-            if (estudiante != null) {
-                return estudiante.toJSON();
-            } else {
-                return "Estudiante no existe.";
-            }
-        });
 
         get("/borrar", (request, response) -> {
             int matricula = Integer.parseInt(request.queryParams("matricula"));
@@ -122,7 +112,7 @@ public class Main {
         });
     }
 
-    public static String renderThymeleaf(Map<String, Object> parametros, String path) {
-        return new ThymeleafTemplateEngine().render(new ModelAndView(parametros, path));
+    public static String renderThymeleaf(Map<String, Object> attributes, String path) {
+        return new ThymeleafTemplateEngine().render(new ModelAndView(attributes, path));
     }
 }

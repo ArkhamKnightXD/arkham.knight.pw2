@@ -19,25 +19,25 @@
             <fieldset>
                 <p th:if="${submit} eq 'Actualizar'">
                     <label for="matriculad">Matricula: </label>
-                    <input type="text" name="matricula" class="form-control" id="matriculad" th:value="${mat}" required
+                    <input type="text" name="matricula" class="form-control" id="matriculad" th:value="${matricula}" required
                            readonly>
                 </p>
                 <p th:if="${submit} eq 'Insertar'">
                     <label for="matricula">Matricula: </label>
-                    <input type="text" name="matricula" class="form-control" id="matricula" th:value="${mat}" required>
+                    <input type="number" name="matricula" class="form-control" id="matricula" th:value="${matricula}" required>
                 </p>
                 </p>
                 <div class="form-group">
                     <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" class="form-control" id="nombre" th:value="${nom}" required>
+                    <input type="text" name="nombre" class="form-control" id="nombre" th:value="${nombre}" required>
                 </div>
                 <div class="form-group">
                     <label for="apellido">Apellido: </label>
-                    <input type="text" name="apellido" class="form-control" id="apellido" th:value="${ape}" required>
+                    <input type="text" name="apellido" class="form-control" id="apellido" th:value="${apellido}" required>
                 </div>
                 <div class="form-group">
                     <label for="telefono">Telefono: </label>
-                    <input type="text" name="telefono" class="form-control" id="telefono" th:value="${tel}" required>
+                    <input type="number" name="telefono" class="form-control" id="telefono" th:value="${telefono}" required>
                 </div>
                 <div>
                     <input type="submit" name="agregar" class="btn btn-success" th:value="${submit}">
