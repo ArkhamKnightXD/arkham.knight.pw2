@@ -6,7 +6,9 @@ import java.util.List;
 public class EstudianteImplementInterface  implements EstudianteInterface {
 
     @Override
-    public void insertar(Estudiante estudiante){DBEstudiante.listaEstudiantes.add(estudiante);}
+    public void insertar(Estudiante estudiante){
+        DBEstudiante.listaEstudiantes.add(estudiante);
+    }
 
     @Override
     public void actualizar(Estudiante estudiante) {
@@ -21,11 +23,14 @@ public class EstudianteImplementInterface  implements EstudianteInterface {
 
     @Override
     public void borrar(Estudiante estudiante) {
+
         DBEstudiante.listaEstudiantes.remove(estudiante);
     }
 
     @Override
-    public List<Estudiante>encontrarEstudiantes(){return DBEstudiante.listaEstudiantes;}
+    public List<Estudiante>encontrarEstudiantes(){
+        return DBEstudiante.listaEstudiantes;
+    }
 
     @Override
     public Estudiante encontrarPorMatricula(int matricula) {

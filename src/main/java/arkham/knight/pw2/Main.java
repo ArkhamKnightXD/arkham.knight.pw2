@@ -1,18 +1,12 @@
 package arkham.knight.pw2;
 
 
-import freemarker.template.Configuration;
 import spark.ModelAndView;
-import spark.template.freemarker.FreeMarkerEngine;
 import spark.template.thymeleaf.ThymeleafTemplateEngine;
-
 import static spark.Spark.*;
-
 import java.util.HashMap;
 import java.util.Map;
 
-
-import static spark.Spark.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,16 +20,12 @@ public class Main {
         String staticDir = "/src/main/resources";
         staticFiles.externalLocation(projectDir + staticDir);
 
-        // redireccion  para el inicio de pagina
+        // de esta forma puedo redirigir la pagina a inicio
         get("/", (request, response) -> {
             response.redirect("/inicio");
             return null;
         });
 
-        get("/index", (request, response) -> {
-            Map<String, Object> attributes = new HashMap<>();
-            return renderThymeleaf(attributes, "/index");
-        });
 
         //Inicio que muestra todos los estudiantes registrados. Si hay
         get("/inicio", (request, response) -> {
@@ -101,7 +91,7 @@ public class Main {
             return null;
         }));
 
-
+//Esta parte se encarga del borrado del crud
         get("/borrar", (request, response) -> {
             int matricula = Integer.parseInt(request.queryParams("matricula"));
             Estudiante estudiante = estudianteService.encontrarPorMatricula(matricula);

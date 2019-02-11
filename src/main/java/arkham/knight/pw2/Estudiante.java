@@ -1,7 +1,6 @@
 package arkham.knight.pw2;
 
 import java.io.Serializable;
-import org.json.simple.JSONObject;
 
 public class Estudiante implements Serializable {
     private int matricula;
